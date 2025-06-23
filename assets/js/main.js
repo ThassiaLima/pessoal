@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const scriptURL = 'COLE_AQUI_A_URL_DO_SEU_SCRIPT_DO_GOOGLE'; // Mantenha sua URL aqui
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzKlqVIlmSKScLhy0qWQzqCcE8WC-hX8H6tOfdkZjWvRCwYrKvEVNhhTh4OhFiEDWylAA/exec'; // Mantenha sua URL aqui
             const formData = new FormData(contactForm);
 
             submitButton.disabled = true;
