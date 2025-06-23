@@ -23,52 +23,66 @@
     </header>
 
     <main class="container">
-        <article class="blog-post-full">
-            <h1>Como Transformar Dados em Decisões Estratégicas</h1>
-            
-            <div class="post-content">
-                <p>Seja bem-vindo ao meu primeiro artigo! A capacidade de transformar dados em decisões estratégicas é
-                    uma das competências mais valiosas no mercado atual. Com base na minha experiência, posso dizer que
-                    o segredo está em unir visão analítica e execução prática, da modelagem à visualização.</p>
+    <article class="blog-post-full">
+        <h1>Métricas sem contexto são só números bonitos</h1>
 
-                <h2>1. Comece com o Problema de Negócio</h2>
-                <p>Antes de mergulhar em qualquer ferramenta como SQL, Python ou Power BI, a pergunta mais importante é:
-                    "Qual problema estamos tentando resolver?". Na Ambev, por exemplo, o objetivo claro era reduzir a
-                    inadimplência. Essa clareza direcionou toda a análise.</p>
+        <div class="post-content">
+            <p>Você já ouviu alguém dizer que teve “mil visualizações” ou que “bateu recorde de vendas” — mas não sabia
+                exatamente o que isso significava na prática? Pois é. Métrica sem contexto é como um mapa sem bússola.
+                Bonito de ver, mas difícil de usar para tomar decisões.</p>
 
-                <h2>2. Análise e Segmentação</h2>
-                <p>Com o objetivo definido, o próximo passo é analisar os dados em busca de padrões. Foi através da
-                    análise de comportamento que identifiquei que clientes com até 60 dias de atraso tinham maior
-                    propensão à quitação. Isso permitiu criar uma estratégia de comunicação personalizada, que se
-                    mostrou muito mais eficaz.</p>
+            <h2>1. Número alto nem sempre é sinal de sucesso</h2>
+            <p>Ter muitos seguidores, visualizações ou cliques pode parecer incrível — mas e daí? Esses números estão
+                ajudando o negócio a crescer? Estão trazendo vendas, relacionamento, aprendizado?</p>
+            <p>Sem uma pergunta certa por trás da métrica, ela vira só enfeite. O que importa é o impacto real no
+                objetivo do negócio.</p>
 
-                <h3>Exemplo de Código em Python (Pandas)</h3>
-                <p>Para ilustrar, veja como poderíamos começar a segmentar clientes usando a biblioteca Pandas em
-                    Python:</p>
-                <pre>
-                    <code class="language-python">
-                            import pandas as pd
+            <h2>2. A métrica certa depende do seu momento</h2>
+            <p>Se você está começando, talvez precise entender o comportamento dos seus primeiros clientes. Se já está
+                consolidado, talvez a questão seja a recorrência ou o lucro por produto.</p>
+            <p>Uma boa métrica responde a uma necessidade atual do negócio. E muda com o tempo.</p>
 
-                            # Suponha que 'df' é um DataFrame com dados de clientes e faturas
-                            # df['dias_atraso'] = ...
+            <h2>3. Sem comparar, não dá pra analisar</h2>
+            <p>Uma venda de R$5 mil pode ser ótima — ou ruim — dependendo do quanto você gastou pra fazer acontecer.
+                Métrica isolada não conta história. Sempre compare com outras variáveis: tempo, investimento, período
+                anterior, outros canais.</p>
 
-                            # Segmentando os clientes
-                            clientes_propensos = df[df['dias_atraso'] <= 60]
-                            clientes_criticos = df[df['dias_atraso'] > 60]
+            <h3>Exemplo prático em Python (Pandas)</h3>
+            <p>Veja como comparar o total de vendas mês a mês com o custo mensal de operação:</p>
+            <pre>
+                <code class="language-python">
+                    import pandas as pd
 
-                            print(f"Clientes com alta propensão a quitar: {len(clientes_propensos)}")
-                    </code>
-                </pre>
+                    # Suponha que temos um DataFrame com vendas e custos por mês
+                    df['data'] = pd.to_datetime(df['data'])
+                    df['mes'] = df['data'].dt.to_period('M')
 
-                <h2>3. Da Estratégia ao Código</h2>
-                <p>O diferencial é não parar na análise, mas levar o insight para a execução. Isso pode significar
-                    implementar automações, criar painéis de visualização em Power BI para o time de atendimento ou até
-                    mesmo ajudar a otimizar a operação de campo com base nos dados coletados.</p>
-                <p>Espero que este primeiro post tenha sido útil! Deixe seus comentários e até a próxima.</p>
-            </div>
+                    resumo = df.groupby('mes')[['vendas', 'custos']].sum()
+                    resumo['lucro'] = resumo['vendas'] - resumo['custos']
 
-        </article>
-    </main>
+                    print(resumo)
+                </code>
+            </pre>
+
+            <h2>4. Métrica boa ajuda a decidir</h2>
+            <p>Se uma informação não te ajuda a agir, ela não está servindo ao propósito. Métrica boa mostra o caminho:
+                cortar gastos, reforçar um canal, investir em algo que está dando retorno.</p>
+            <p>É aí que entra a inteligência de dados — transformar número em ação.</p>
+
+            <h2>5. Visualize com intenção</h2>
+            <p>Um gráfico bonito chama atenção, mas ele precisa contar uma história. Escolha o tipo certo de visual:
+                barras para comparação, linha para evolução, pizza para proporções. Menos é mais.</p>
+
+            <p>No fim, números só têm valor quando dizem algo sobre a realidade do seu negócio. E esse significado
+                vem do contexto. Por isso, aqui na EkóLabs, a gente acredita que dado bom é dado com propósito — simples
+                de entender, útil pra decidir e conectado com quem você é.</p>
+
+            <p>Se esse conteúdo te fez repensar como você olha pros seus números, compartilha com alguém que também
+                precisa disso. A revolução começa na consciência. Até a próxima!</p>
+        </div>
+    </article>
+</main>
+
 
     <footer class="footer">
         <p>&copy; 2024 - Thassia Lima. Todos os direitos reservados.</p>

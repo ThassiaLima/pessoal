@@ -1,7 +1,7 @@
 [
     {
         "title": "Como Transformar Dados em Decisões Estratégicas",
-        "description": "Neste artigo, vamos explorar o caminho para transformar dados brutos em insights que geram impacto real no negócio...",
+        "description": "Transforme dados em decisões com propósito. BI acessível para pequenos negócios que querem crescer com clareza...",
         "link": "posts/artigo1.html"
     },
 
@@ -9,16 +9,16 @@
 
 
     {
-        "title": "Como Transformar Dados em Decisões Estratégicas",
-        "description": "Vamos falar um pouco sobre...",
+        "title": "Métricas sem contexto são só números bonitos",
+        "description": "Bonitos, mas inúteis? Sem contexto, métricas viram distrações. Aprenda a transformá-las em decisões...",
         "link": "posts/artigo2.html"
     },
 
 
 
     {
-        "title": "Como Transformar Dados em Decisões Estratégicas",
-        "description": "Importante lembrar que ...",
+        "title": "Feature nova não é sucesso. Sucesso é resolver o problema certo.",
+        "description": "Nova funcionalidade não é vitória. Vitória é resolver o que de fato importa para o cliente...",
         "link": "posts/artigo3.html"
     }
 ]

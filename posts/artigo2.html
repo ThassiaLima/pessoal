@@ -24,50 +24,60 @@
 
     <main class="container">
         <article class="blog-post-full">
-            <h1>Como Criar Produtos Inovadores</h1>
+            <h1>Métricas sem contexto são só números bonitos</h1>
+
             <div class="post-content">
-                <p>Seja bem-vindo ao meu primeiro artigo! A capacidade de transformar dados em decisões estratégicas é
-                    uma das competências mais valiosas no mercado atual. Com base na minha experiência, posso dizer que
-                    o segredo está em unir visão analítica e execução prática, da modelagem à visualização.</p>
+                <p>Em um mundo onde tudo pode ser medido, é fácil cair na armadilha de valorizar números apenas porque
+                    parecem altos, baixos ou bonitos. Mas a verdade é simples: uma métrica sem contexto não diz nada — e
+                    pode até te levar por caminhos errados.</p>
 
-                <h2>1. Comece com o Problema de Negócio</h2>
-                <p>Antes de mergulhar em qualquer ferramenta como SQL, Python ou Power BI, a pergunta mais importante é:
-                    "Qual problema estamos tentando resolver?". Na Ambev, por exemplo, o objetivo claro era reduzir a
-                    inadimplência. Essa clareza direcionou toda a análise.</p>
+                <h2>1. O que você quer entender com esse número?</h2>
+                <p>Antes de olhar para um gráfico ou um painel, a pergunta fundamental é: “O que eu quero aprender com
+                    isso?”. Sem uma intenção clara, um número de curtidas, de vendas ou de visitas ao site vira só mais
+                    uma
+                    distração.</p>
+                <p>Um bom dado responde a uma dúvida real. Exemplo: "Será que essa nova campanha trouxe clientes
+                    diferentes
+                    dos anteriores?" é muito mais útil do que apenas saber que “as visitas aumentaram 30%”.</p>
 
-                <h2>2. Análise e Segmentação</h2>
-                <p>Com o objetivo definido, o próximo passo é analisar os dados em busca de padrões. Foi através da
-                    análise de comportamento que identifiquei que clientes com até 60 dias de atraso tinham maior
-                    propensão à quitação. Isso permitiu criar uma estratégia de comunicação personalizada, que se
-                    mostrou muito mais eficaz.</p>
+                <h2>2. Métrica bonita não paga boleto</h2>
+                <p>É comum ver negócios se apegando a números que impressionam visualmente, mas não mudam o jogo. Um
+                    perfil
+                    com 10 mil seguidores que não vende, um e-mail com 90% de taxa de abertura mas zero conversão — tudo
+                    isso ilude.</p>
+                <p>O que importa é como esse dado contribui para decisões: melhorar um produto, ajustar um preço,
+                    entender
+                    melhor um cliente. Se não ajuda a agir, não serve.</p>
 
-                <h3>Exemplo de Código em Python (Pandas)</h3>
-                <p>Para ilustrar, veja como poderíamos começar a segmentar clientes usando a biblioteca Pandas em
-                    Python:</p>
-                <pre>
-                    <code class="language-python">
-                            import pandas as pd
+                <h2>3. Contexto é o que transforma métrica em decisão</h2>
+                <p>Se o número de vendas caiu, isso é bom ou ruim? Depende. Pode ser resultado de uma decisão consciente
+                    de
+                    aumentar o preço. Pode ser sazonal. Pode ser reflexo de um problema no atendimento. É o contexto que
+                    vai te dar essa resposta — e não a métrica sozinha.</p>
 
-                            # Suponha que 'df' é um DataFrame com dados de clientes e faturas
-                            # df['dias_atraso'] = ...
+                <h2>4. O que acompanhar, então?</h2>
+                <p>Os melhores indicadores são os que se conectam com seu objetivo. Quer reter clientes? Acompanhe taxa
+                    de
+                    recompra. Quer melhorar sua operação? Olhe para tempo médio de entrega, número de erros, custos por
+                    canal.</p>
+                <p>Menos números, mais propósito. Foque no que realmente move o seu negócio para frente.</p>
 
-                            # Segmentando os clientes
-                            clientes_propensos = df[df['dias_atraso'] <= 60]
-                            clientes_criticos = df[df['dias_atraso'] > 60]
+                <h2>5. Dado bom é dado com significado</h2>
+                <p>Você não precisa ser uma empresa gigante pra usar dados de forma inteligente. Às vezes, uma planilha
+                    com
+                    três colunas bem pensadas vai te dar mais clareza do que um dashboard super colorido e confuso.</p>
 
-                            print(f"Clientes com alta propensão a quitar: {len(clientes_propensos)}")
-                    </code>
-                </pre>
+                <p>Na EkóLabs, nosso papel é justamente esse: ajudar pequenos negócios a dar sentido aos dados que já
+                    têm.
+                    Porque crescer com consciência exige mais do que números — exige entendimento.</p>
 
-                <h2>3. Da Estratégia ao Código</h2>
-                <p>O diferencial é não parar na análise, mas levar o insight para a execução. Isso pode significar
-                    implementar automações, criar painéis de visualização em Power BI para o time de atendimento ou até
-                    mesmo ajudar a otimizar a operação de campo com base nos dados coletados.</p>
-                <p>Espero que este primeiro post tenha sido útil! Deixe seus comentários e até a próxima.</p>
+                <p>Se fez sentido pra você, compartilha com alguém que também precisa tirar os dados do piloto
+                    automático.
+                    Até o próximo post!</p>
             </div>
-
         </article>
     </main>
+
 
     <footer class="footer">
         <p>&copy; 2024 - Thassia Lima. Todos os direitos reservados.</p>
