@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     postsHTML += `
                         <article class="blog-post-summary">
                             <h2>${post.title}</h2>
-                            <p class="post-meta">Publicado em ${new Date(post.date).toLocaleDateString('pt-BR', {timeZone: 'UTC'})}</p>
                             <p>${post.description}</p>
                             <a href="${post.link}" class="read-more">Leia Mais</a>
                         </article>
