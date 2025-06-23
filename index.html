@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thassia Lima - Site Pessoal</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo Thassia Lima" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="about-me">
+                <img src="assets/images/fotos.jpg" alt="Foto de Thassia Lima" class="profile-photo">
+                <div class="about-text">
+                    <h1>Thassia Lima</h1>
+                    <p>Sou uma profissional com experiência em Product Management e Business Intelligence, com foco em transformar dados em decisões estratégicas que geram impacto real no negócio.  Tenho domínio prático de ferramentas como Power BI, SQL, Python e Databricks, e facilidade em comunicar insights de forma clara e acionável para diferentes públicos. </p>
+                    <p>Meu diferencial é a capacidade de unir visão analítica e execução prática, da modelagem à visualização, da estratégia ao código. </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/thassia-lima/" target="_blank">LinkedIn</a>
+                        <a href="https://thassialima.github.io/ekolab/" target="_blank">Ekolab</a>
+
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <section id="latest-posts" class="latest-posts">
+            <div class="container">
+                <h2>Últimos Posts</h2>
+                <div id="posts-container" class="posts-grid">
+                    </div>
+                <div class="all-posts-link">
+                    <a href="blog.html" class="read-more">Ver todos os posts</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule-section">
+            <div class="container">
+                <h2>Vamos Conversar?</h2>
+                <p>Se você tem uma ideia, um projeto ou busca uma mentoria em produto e dados, ficarei feliz em ajudar. Agende um horário na minha agenda.</p>
+                <a href="https://calendly.com/seu-usuario" target="_blank" class="calendly-button">Agendar uma conversa</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma pergunta ou proposta? Preencha o formulário abaixo e entrarei em contato assim que possível.</p>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" id="submit-button">Enviar Mensagem</button>
+                    <p id="form-status"></p> </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - Thassia Lima. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

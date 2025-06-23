@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Transformar Dados em Decisões Estratégicas - Thassia Lima</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo Thassia Lima" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="blog-post-full">
+            <h1>Como Criar Produtos Inovadores</h1>
+            <p class="post-meta">Publicado por Thassia Lima em 23 de junho de 2025</p>
+
+            <div class="post-content">
+                <p>Seja bem-vindo ao meu primeiro artigo! A capacidade de transformar dados em decisões estratégicas é
+                    uma das competências mais valiosas no mercado atual. Com base na minha experiência, posso dizer que
+                    o segredo está em unir visão analítica e execução prática, da modelagem à visualização.</p>
+
+                <h2>1. Comece com o Problema de Negócio</h2>
+                <p>Antes de mergulhar em qualquer ferramenta como SQL, Python ou Power BI, a pergunta mais importante é:
+                    "Qual problema estamos tentando resolver?". Na Ambev, por exemplo, o objetivo claro era reduzir a
+                    inadimplência. Essa clareza direcionou toda a análise.</p>
+
+                <h2>2. Análise e Segmentação</h2>
+                <p>Com o objetivo definido, o próximo passo é analisar os dados em busca de padrões. Foi através da
+                    análise de comportamento que identifiquei que clientes com até 60 dias de atraso tinham maior
+                    propensão à quitação. Isso permitiu criar uma estratégia de comunicação personalizada, que se
+                    mostrou muito mais eficaz.</p>
+
+                <h3>Exemplo de Código em Python (Pandas)</h3>
+                <p>Para ilustrar, veja como poderíamos começar a segmentar clientes usando a biblioteca Pandas em
+                    Python:</p>
+                <pre>
+                    <code class="language-python">
+                            import pandas as pd
+
+                            # Suponha que 'df' é um DataFrame com dados de clientes e faturas
+                            # df['dias_atraso'] = ...
+
+                            # Segmentando os clientes
+                            clientes_propensos = df[df['dias_atraso'] <= 60]
+                            clientes_criticos = df[df['dias_atraso'] > 60]
+
+                            print(f"Clientes com alta propensão a quitar: {len(clientes_propensos)}")
+                    </code>
+                </pre>
+
+                <h2>3. Da Estratégia ao Código</h2>
+                <p>O diferencial é não parar na análise, mas levar o insight para a execução. Isso pode significar
+                    implementar automações, criar painéis de visualização em Power BI para o time de atendimento ou até
+                    mesmo ajudar a otimizar a operação de campo com base nos dados coletados.</p>
+                <p>Espero que este primeiro post tenha sido útil! Deixe seus comentários e até a próxima.</p>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - Thassia Lima. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
